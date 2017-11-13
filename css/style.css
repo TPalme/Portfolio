@@ -107,7 +107,7 @@ nav a:focus {
 
 @media (min-width: 50rem) {
   .logo {
-    float: center;
+    float: none;
   }
 
   nav {
