@@ -15,18 +15,36 @@
           font-size: 20px;
               }
     </style>
-      alert("Yo, welcome to my portfolio!");
-    <script>
 
+<!-- Inspired By https://stackoverflow.com/questions/3264739/image-change-every-30-seconds-loop -->
+    <script language="javascript" type="text/javascript">
+     var images = new Array()
+     images[0] = "img/logo1.png";
+     images[1] = "img/logo1blue.png";
+     images[2] = "img/logo1.png";
+     setInterval("changeImage()", 200);
+     var x=0;
 
-
+     function changeImage()
+     {
+                document.getElementById("img").src=images[x]
+                x++;
+                if (images.length == x)
+                {
+                    x = 0;
+                }
+     }
     </script>
+
   </head>
 
 <body>
 
+
+
 <header>
-  <img src="img/logo1.png" alt="Tristan Palmer Logo" class="logo">
+  <img id="img" src="img/logo1.png">
+  <!---<img src="img/logo1.png" alt="Tristan Palmer Logo" class="logo"> -->
   <nav role="navigation">
     <ul class="main-nav">
       <li><a  class="active" href="index.html">Home</a></li>
