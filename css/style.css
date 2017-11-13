@@ -40,9 +40,9 @@ h1 {
   -webkit-text-stroke: 2px black;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 40rem) {
   .title{
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 /* buttons */
@@ -107,7 +107,7 @@ nav a:focus {
 
 @media (min-width: 50rem) {
   .logo {
-    float: none;
+    float: center;
   }
 
   nav {
