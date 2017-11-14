@@ -21,7 +21,7 @@ text-decoration-style: }
   margin: 0 auto;
 }
 
-/* typography */
+/* Type */
 
 h1 {
 }
@@ -29,7 +29,6 @@ h1 {
 .title {
   font-size: 3.5rem;
   margin-bottom: 1.5em;
-  /* color: #b3f0ff; */
   color: #FFF;
 }
 
@@ -58,13 +57,13 @@ h1 {
 }
 
 .button-accent {
-  /* color: #b3f0ff; */
   color: #999999;
 }
 
 .button-accent:hover,
 .button-accent:focus {
-
+  background-color: #b3f0ff;
+  color: #999999;
 }
 
 @media (min-width: 60rem) {
@@ -73,7 +72,7 @@ h1 {
   }
 }
 
-/* header */
+/* Header */
 
 header {
   position: absolute;
@@ -115,7 +114,7 @@ nav a:focus {
   }
 }
 
-/* home header */
+/* Home Header */
 
 .home-header {
   background: url(../img/header-background.jpg);
@@ -129,11 +128,5 @@ nav a:focus {
     height: 100vh;
     padding-top: 20vh;
   }
-
-}
-
-/* Home Description */
-
-.home-description-textbox{
 
 }

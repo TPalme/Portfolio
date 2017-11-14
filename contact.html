@@ -3,11 +3,9 @@
 
 <head>
   <title>Contact</title>
-
+  <meta name="author" content="Tristan Palmer">
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="css/style.css" rel ="stylesheet" type="text/css">
   <style>
@@ -16,11 +14,27 @@
         font-size: 20px;
             }
   </style>
+  <script language="javascript" type="text/javascript">
+   var images = new Array()
+   images[0] = "img/logo1.png";
+   images[1] = "img/logo1blue.png";
+   images[2] = "img/logo1.png";
+   setInterval("changeImage()", 200);
+   var x=0;
+   function changeImage()
+   {
+              document.getElementById("img").src=images[x]
+              x++;
+              if (images.length == x)
+              {
+                  x = 0;
+              }
+   }
+  </script>
 </head>
 <body>
-
   <header>
-    <img src="img/logo1.png" alt="Tristan Palmer Logo" class="logo">
+    <img id="img" src="img/logo1.png">
     <nav role="navigation">
       <ul class="main-nav">
         <li><a  class="active" href="index.html">Home</a></li>
@@ -31,30 +45,21 @@
       </ul>
     </nav>
   <header>
-
   <section class="home-header">
     <div class="container">
       <h1 class="title">
         <span>Contact Me</span>
       </h1>
     </div>
-
   </section>
-
   <section class "home-description">
-
     <div class="home-description-textbox">
-
-      <h1><strong>Email Me!: Palmert@uci.edu</strong></h1>
+      <h1><strong>Email Me! Palmert@uci.edu</strong></h1>
       <p>Business Inquiries: support@TrinfinityHealth.com</p>
-
     </div>
-
   </section>
-
   <section class="Contact">
     <h1></h1>
-
     <!-- item 1 -->
     <figure class="Contact">
       <img src="img/portfolio-pic.jpg" alt="wedding picture">
@@ -65,11 +70,6 @@
         <p></p>
       </figcaption>
     </figure>
-
-
   </section>
-
-
 </body>
-
 </html>
